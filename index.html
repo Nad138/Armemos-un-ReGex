@@ -13,36 +13,31 @@
     <h3>Ingresa tus datos en el siguiente formulario:</h3>
     <form class="" action="index.html" method="post">
       <div class="registro">
-        <label><strong>Nombres: </strong><input type="text" id="nombre" value="" placeholder="Ingresa tus nombres" required="" pattern="/\b[A-z][ ]+\b/"></label><br>
+        <label><strong>Nombres: </strong><input type="text" id="nombre" value="" placeholder="Ingresa tus nombres" required="" pattern="/^[A-Z]{1}[a-z]+$/"></label><br>
         <span></span><br>
-        <label><strong>Apellidos: </strong><input type="text" id="apellido" value="" placeholder="Ingresa tus apellidos" required="" pattern="/^[A-Z]{1}[a-z][ ]+$/"></label><br>
+        <label><strong>Apellidos: </strong><input type="text" id="apellido" value="" placeholder="Ingresa tus apellidos" required="" pattern="/^[A-Z]{1}[a-z]+$/"></label><br>
         <span></span><br>
-        <label><strong>DNI: </strong><input type="numb" id="dni" value="" placeholder="Número del documento" required="" pattern="/^\d{9}$/"></label><br>
+        <label><strong>DNI: </strong><input type="numb" id="dni" value="" placeholder="Número del documento" required="" pattern="/^\d{9}$/" maxlength="9"></label><br>
         <span></span><br>
         <label><strong>Fecha de Nacimiento: </strong><input type="date" id="cumple" value="" placeholder="Fecha de nacimiento" required="" pattern="/^[0-3]{1}[0-9]{1}$/"></label><br>
         <span></span><br>
-        <label><strong>Celular: </strong><input type="numb" id="celular" value="" placeholder="Número de celular" required="" pattern="/^\d{3}[ |-]\d{3}[ |-]\d{3}$/"></label><br>
+        <label><strong>Celular: </strong><input type="numb" id="celular" value="" placeholder="Número de celular" required=""  pattern="/^\d{3}[ |-]\d{3}[ |-]\d{3}$/" maxlength="9"></label><br>
         <span></span><br>
-        <label><strong>Teléfono: </strong><input type="numb" id="telefono" value="" placeholder="Número de Teléfono" required="" pattern="/^\d{3}[ |-]\d{4}$/"></label><br>
+        <label><strong>Teléfono: </strong><input type="numb" id="telefono" value="" placeholder="Número de Teléfono" required="" pattern="/^\d{3}[ |-]\d{4}$/" maxlength="7"></label><br>
         <span></span><br>
         <label><strong>Contraseña: </strong><input type="text" id="clave" value="" placeholder="Contraseña" required="" pattern="/^\w{6,}$/"></label><br>
         <span></span><br>
         <label><strong>Confirma tu contraseña: </strong><input type="text" id="confirmar" value="" placeholder="Confirmar contraseña" required="" pattern="/^\w{6,}$/"></label><br>
         <span></span><br>
-        <label><strong>Comentarios: </strong><br><input type="textarea" id="comentarios" value=""  pattern="/\b\w\d\s\b/"></label><br>
+        <label><strong>Comentarios: </strong><br><input type="textarea" id="comentarios" value=""  pattern="/^\w[ ]+$/"></label><br>
         <span></span><br>
-        <input type="checkbox" id="checkbox" value="" required="" pattern=""><label> Acepto los <a href="#">Términos y condiciones</a></label>
+        <input type="checkbox" id="checkbox" value="" required="" pattern="checkbox"><label> Acepto los <a href="#">Términos y condiciones</a></label>
         <span></span><br>
       </div>
       <br>
       <button type="submit" name="button"><strong>Registrar</strong></button>
-
-
     </form>
-
   </section>
-
-
   <script src="assets/js/main.js" charset="utf-8"></script>
 </body>
 </html>
