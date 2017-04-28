@@ -11,7 +11,7 @@ function validar(){
   var coments = document.getElementById("comentarios").value;
   var checkbox = document.getElementById("checkbox").value;
 
-  if(clave == confirmar){
+  if(clave==confirmar){
     this.nextElementSibling.nextElementSibling.innerText= " ";
     return true;
   }
